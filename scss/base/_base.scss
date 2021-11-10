@@ -10,7 +10,7 @@ $light-red: hsl(0, 100%, 63%);
 
 $very-dark-cyan: hsl(192, 100%, 9%);
 $very-pale-blue: hsl(207, 100%, 98%);
-$white: #f1f1f1;
+$white: #fff;
 
 // Responsive breakpoints
 
@@ -44,9 +44,60 @@ html {
 body {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
-    font-size: 1.6rem;
-    color: $very-dark-cyan;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    color: rgba($very-dark-cyan, 0.8);
     background-color: $white;
+
+    @media only screen and (min-width: $bp-tablet) {
+        font-size: 1.6rem;
+    }
+}
+
+.container {
+    max-width: 40rem;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15rem;
+
+    &--footer {
+        gap: 0;
+    }
+
+    @media only screen and (min-width: $bp-tablet) {
+        max-width: $bp-tablet;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        gap: 5rem;
+    }
+
+    @media only screen and (min-width: $bp-desktop) {
+        max-width: $bp-desktop;
+    }
+    @media only screen and (min-width: $bp-large-desktop) {
+        max-width: $bp-large-desktop;
+    }
+}
+
+section {
+    padding: 12rem 2rem;
+
+    @media only screen and (min-width: $bp-tablet) {
+        padding: 12rem 0;
+    }
+}
+
+.flowing,
+.ready {
+    padding: 20rem 2rem 35rem 2rem;
+
+    @media only screen and (min-width: $bp-tablet) {
+        padding: 20rem 0 35rem 0;
+    }
 }
 
 h1,
@@ -55,18 +106,19 @@ h3 {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     color: $very-dark-cyan;
+    margin-bottom: 3rem;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 3.5rem;
     margin-bottom: 2rem;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 3rem;
     margin-bottom: 2rem;
 }

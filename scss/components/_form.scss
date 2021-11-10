@@ -1,0 +1,65 @@
+@use "../base/base" as *;
+
+.form {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (min-width: $bp-tablet) {
+        width: 90%;
+    }
+
+    &__group {
+        padding-bottom: 2rem;
+        position: relative;
+
+        small {
+            visibility: hidden;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            color: #e74c3c;
+        }
+
+        &.error small {
+            visibility: visible;
+        }
+    }
+
+    &__group.success &__input {
+        border: 2px solid #2ecc71;
+    }
+    &__group.error &__input {
+        border: 2px solid #e74c3c;
+    }
+
+    &__input {
+        border: none;
+        border-radius: 0.4rem;
+        outline: none;
+        font-size: inherit;
+        font-family: inherit;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    &__btn {
+        background-color: $pink;
+        border: none;
+        border-radius: 0.4rem;
+        outline: none;
+        font-size: inherit;
+        font-family: inherit;
+        font-weight: 600;
+        color: $white;
+        padding: 1rem 3rem;
+        cursor: pointer;
+        transition: ease-in 0.3s;
+
+        align-self: flex-end;
+
+        &:hover {
+            background-color: $light-pink;
+        }
+    }
+}

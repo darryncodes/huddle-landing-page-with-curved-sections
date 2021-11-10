@@ -1,0 +1,17 @@
+@use "../base/base" as *;
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+
+    @media only screen and (min-width: $bp-large-desktop) {
+        max-width: $bp-large-desktop;
+        margin: 0 auto;
+    }
+
+    &__logo {
+        height: 3rem;
+    }
+}
