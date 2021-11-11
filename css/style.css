@@ -88,13 +88,20 @@ section {
   }
 }
 
-.flowing,
+.flowing {
+  padding: 20rem 2rem 35rem 2rem;
+}
+@media only screen and (min-width: 37.5em) {
+  .flowing {
+    padding: 20rem 0 25rem 0;
+  }
+}
+
 .ready {
   padding: 20rem 2rem 35rem 2rem;
 }
 @media only screen and (min-width: 37.5em) {
-  .flowing,
-.ready {
+  .ready {
     padding: 20rem 0 35rem 0;
   }
 }
@@ -285,10 +292,10 @@ h3 {
   }
 }
 .social-proof__card--communities::before {
-  background-image: url(../../img/icon-communities.svg);
+  background-image: url(../img/icon-communities.svg);
 }
 .social-proof__card--messages::before {
-  background-image: url(../../img/icon-messages.svg);
+  background-image: url(../img/icon-messages.svg);
 }
 .social-proof__heading {
   font-size: 7rem;
@@ -305,9 +312,16 @@ h3 {
 }
 .together__top, .together__top--mobile {
   position: absolute;
-  top: -130px;
   left: 0;
   width: 100%;
+}
+.together__top {
+  height: 20rem;
+  top: -130px;
+}
+.together__top--mobile {
+  height: 15rem;
+  top: -110px;
 }
 .together__top {
   display: none;
@@ -327,9 +341,16 @@ h3 {
 }
 .together__bottom, .together__bottom--mobile {
   position: absolute;
-  bottom: -140px;
   left: 0;
   width: 100%;
+}
+.together__bottom {
+  bottom: -130px;
+  height: 15rem;
+}
+.together__bottom--mobile {
+  bottom: -50px;
+  height: 7rem;
 }
 .together__bottom {
   display: none;
@@ -353,9 +374,16 @@ h3 {
 }
 .users__top, .users__top--mobile {
   position: absolute;
-  top: -130px;
   left: 0;
   width: 100%;
+}
+.users__top {
+  top: -130px;
+  height: 20rem;
+}
+.users__top--mobile {
+  top: -90px;
+  height: 12rem;
 }
 .users__top {
   display: none;
@@ -375,9 +403,16 @@ h3 {
 }
 .users__bottom, .users__bottom--mobile {
   position: absolute;
-  bottom: -140px;
   left: 0;
   width: 100%;
+}
+.users__bottom {
+  bottom: -180px;
+  height: 20rem;
+}
+.users__bottom--mobile {
+  bottom: -120px;
+  height: 15rem;
 }
 .users__bottom {
   display: none;
@@ -464,9 +499,16 @@ footer {
 }
 .huddle__top, .huddle__top--mobile {
   position: absolute;
-  top: -145px;
   left: 0;
   width: 100%;
+}
+.huddle__top {
+  top: -145px;
+  height: 18rem;
+}
+.huddle__top--mobile {
+  top: -50px;
+  height: 7rem;
 }
 .huddle__top {
   display: none;
@@ -504,10 +546,10 @@ footer {
   background-repeat: no-repeat;
 }
 .huddle__phone::before {
-  background-image: url(../../img/icon-phone.svg);
+  background-image: url(../img/icon-phone.svg);
 }
 .huddle__email::before {
-  background-image: url(../../img/icon-email.svg);
+  background-image: url(../img/icon-email.svg);
 }
 .huddle__phone {
   margin-top: 5rem;
