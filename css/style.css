@@ -116,11 +116,13 @@ h3 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.8rem;
+  line-height: 1.3;
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
+  line-height: 1.3;
   margin-bottom: 2rem;
 }
 
