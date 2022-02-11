@@ -30,7 +30,6 @@ Users should be able to:
 
 - [GitHub repo](https://github.com/darryncodes/huddle-landing-page-with-curved-sections)
 - [Solution URL](https://darryncodes.github.io/huddle-landing-page-with-curved-sections/)
-- [Live Site URL](https://www.darryncodes.co.uk/pages/huddle.html)
 
 ## My process
 
